@@ -1,0 +1,21 @@
+<!-- <section class="example-section">
+  <h4>Select your choise:</h4>
+  <p *ngFor="let temp of products"><mat-checkbox (change)="getproducts($event,temp)" [(ngModel)]="temp.checked">{{temp.product}}</mat-checkbox></p>
+  
+</section>
+<ul>
+  <li *ngFor="let item of selectedValue">{{item.product}}</li>
+</ul> -->
+
+
+<hr>
+<label id="example-radio-group-label">Pick your runs</label>
+<mat-radio-group >
+  <mat-radio-button class="example-radio-button" *ngFor="let item of runs" value="item" (click)="getrun(item)">
+    {{item}}
+  </mat-radio-button>
+</mat-radio-group>
+
+<ul>
+  <li *ngFor="let temp of scores">{{temp}}  </li>
+</ul> 
